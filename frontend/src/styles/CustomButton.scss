@@ -1,0 +1,22 @@
+@use 'colors';
+
+@mixin button($background-color, $text-color, $border-color, $text-hover) {
+  background-color: $background-color;
+  color: $text-color;
+  padding: 10px 20px;
+  border: $border-color;
+  border-radius: 5px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $text-hover;
+  }
+}
+
+.primary {
+  @include button($primary, $__primary, $primary, $_primary);
+}
+
+.secondary {
+  @include button($secondary, $__primary, $secondary, $_secondary);
+}

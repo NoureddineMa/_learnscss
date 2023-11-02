@@ -1,0 +1,20 @@
+@use 'colors';
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    background-color: black;
+    padding: 1rem 3rem;
+
+    span {
+        color: white;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+}
+
+.__second_span {
+    color: rgb(136, 24, 136);
+}
